@@ -50,7 +50,7 @@ The assistant has access to Constant Contact's Atlassian suite through MCP serve
 
 #### Authentication
 - Configured via `~/.claude/mcp_settings.json`
-- Uses email: matthew.maynes@constantcontact.com
+- Uses email: honey.park@constantcontact.com
 - Site URL: https://ctct.atlassian.net
 - API access through Atlassian MCP server
 
@@ -67,7 +67,7 @@ When transitioning JIRA issues to a "Done" status (using `transitionJiraIssue`),
 Common resolution values: "Done", "Won't Do", "Duplicate", "Cannot Reproduce"
 
 **Cloud ID:**
-The Atlassian cloud ID for ctct.atlassian.net is: `cbc23de1-5ab0-48a6-9c56-e539b356b9dc`
+The Atlassian cloud ID for ctct.atlassian.net is: help me figure out where to get this next time you need it.
 
 #### Usage Examples
 - "What's the status of IM-3139?"
