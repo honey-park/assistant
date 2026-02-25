@@ -147,11 +147,12 @@ POC: (title: "Evaluate Redis vs Memcached for session caching")
 ### JIRA Ticket Workflow
 
 When working on a JIRA ticket:
-1. **Use the ticket number as the branch name** (e.g., `CPD-1234`) — never commit directly to main
-2. **Always create a PR** for the changes
-3. **Use conventional commits** for ALL commits AND PR titles (e.g., `feat: [CPD-1234] Add feature`, `fix: [CPD-1234] Fix bug`). Prefixes: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`, etc.
-4. **Transition to "In Progress"** (transition id: `321`) when starting work
-5. **Transition to "Ready for Code Review"** (transition id: `101`) when the PR is submitted — this transition is only available from "In Progress", so ensure the ticket is In Progress first
+1. **Always start from main or the master branch** and pull the latest changes before creating the branch in step 2.
+2. **Use the ticket number as the branch name** (e.g., `CPD-1234`) — never commit directly to main
+3. **Always create a PR** for the changes
+4. **Use conventional commits** for ALL commits AND PR titles (e.g., `feat: [CPD-1234] Add feature`, `fix: [CPD-1234] Fix bug`). Prefixes: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`, etc.
+5. **Transition to "In Progress"** (transition id: `321`) when starting work
+6. **Transition to "Ready for Code Review"** (transition id: `101`) when the PR is submitted — this transition is only available from "In Progress", so ensure the ticket is In Progress first
 
 ### Git Safety Rules
 
