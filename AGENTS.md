@@ -140,8 +140,8 @@ POC: (title: "Evaluate Redis vs Memcached for session caching")
 
 ### JIRA Ticket Defaults
 
-- **Assignee**: Always set to Matt Maynes (`712020:d82d841d-1ee9-4b9f-ae16-068301c98c44`) unless otherwise specified
-- **Team**: Always set to `Rise Foundations` unless otherwise specified
+- **Assignee**: Always set to Honey Park unless otherwise specified
+- **Team**: Always set to `Pikachu` unless otherwise specified
 - **Sprint**: Always add tickets to the active sprint with a `W` in the name. Look this up for each batch of tickets (it changes each sprint cycle). Set via `editJiraIssue` with `{"customfield_10020": <sprint_id_integer>}`. Find the active W sprint by searching: `project = CPD AND sprint in openSprints() AND sprint != null` and checking the `customfield_10020` field for an entry with "W" in the name.
 
 ### JIRA Ticket Workflow
