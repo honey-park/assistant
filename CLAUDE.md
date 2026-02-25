@@ -38,6 +38,8 @@ Use sequential numbering with descriptive names:
 
 **NEVER use `git add -A` or `git add .`** - Always add files explicitly.
 
+**NEVER automatically create PRs** - Always ask the user first before creating a pull request. Create branches and commits, but stop before opening the PR.
+
 Commit messages format:
 ```
 [Spec 0001] Description of change
