@@ -38,7 +38,9 @@ Use sequential numbering with descriptive names:
 
 **NEVER use `git add -A` or `git add .`** - Always add files explicitly.
 
-**NEVER automatically create PRs** - Always ask the user first before creating a pull request. Create branches and commits, but stop before opening the PR.
+**NEVER automatically commit code** - Always ask the user first before committing changes, unless explicitly told to commit.
+
+**NEVER automatically create PRs** - Always ask the user first before creating a pull request. Create branches and make changes, but stop before committing or opening PRs.
 
 Commit messages format:
 ```
