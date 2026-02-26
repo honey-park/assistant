@@ -2,6 +2,21 @@
 
 > **Note**: For personal assistant instructions and general context, see `AGENTS.md`. This file focuses on development-specific instructions.
 
+## ⚠️ CRITICAL RULES - READ FIRST
+
+**STOP AFTER PUSHING. NEVER CREATE PRS WITHOUT EXPLICIT PERMISSION.**
+
+Even if the user says "go for it" or "do it" - that does NOT mean create a PR. After pushing a branch, ALWAYS explicitly ask: "Should I create a PR?" and wait for confirmation before running `gh pr create`.
+
+**When to commit/push:**
+- Only when explicitly told to commit/push
+- When user says "yes" to "should I commit this?"
+
+**When to create PRs:**
+- ONLY when explicitly told "create a PR" or "open a PR"
+- ONLY after explicitly asking "Should I create a PR?" and receiving confirmation
+- NEVER assume permission from "go for it", "do it", "yes", etc.
+
 ## Project Overview
 
 This repository serves as a personal assistant home base. This project also uses **Codev** for AI-assisted development when needed.
@@ -40,7 +55,7 @@ Use sequential numbering with descriptive names:
 
 **NEVER automatically commit code** - Always ask the user first before committing changes, unless explicitly told to commit.
 
-**NEVER automatically create PRs** - Always ask the user first before creating a pull request. Create branches and make changes, but stop before committing or opening PRs.
+**NEVER automatically create PRs** - Even after pushing a branch, STOP and explicitly ask "Should I create a PR?" before running `gh pr create`. "Go for it" or "do it" does NOT mean create a PR - wait for explicit "create a PR" or "yes" to your question.
 
 Commit messages format:
 ```

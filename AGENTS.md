@@ -149,7 +149,7 @@ POC: (title: "Evaluate Redis vs Memcached for session caching")
 When working on a JIRA ticket:
 1. **Always start from main or the master branch** and pull the latest changes before creating the branch in step 2.
 2. **Use the ticket number as the branch name** (e.g., `CPD-1234`) — never commit directly to main
-3. **Always create a PR** for the changes
+3. **Always create a PR** for the changes — BUT STOP AFTER PUSHING and explicitly ask "Should I create a PR?" before running `gh pr create`. Even if the user says "go for it" or "do it", that does NOT mean create a PR automatically.
 4. **Use conventional commits** for ALL commits AND PR titles (e.g., `feat: [CPD-1234] Add feature`, `fix: [CPD-1234] Fix bug`). Prefixes: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`, etc.
 5. **Transition to "In Progress"** (transition id: `321`) when starting work
 6. **Transition to "Ready for Code Review"** (transition id: `101`) when the PR is submitted — this transition is only available from "In Progress", so ensure the ticket is In Progress first
