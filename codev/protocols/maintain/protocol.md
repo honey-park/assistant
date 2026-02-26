@@ -111,7 +111,7 @@ ruff check --select F401   # Find unused imports
 
 | Task | Parallelizable | Human Review? | Description |
 |------|----------------|---------------|-------------|
-| Update GitHub Issue statuses | Yes | No | Close completed issues, update labels |
+| Update JIRA ticket statuses | Yes | No | Close completed tickets, update status |
 
 ### Framework Tasks
 

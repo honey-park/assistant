@@ -30,7 +30,7 @@ git log --oneline <last-maint-commit>..HEAD
 
 ### Framework
 - [ ] codev update
-- [ ] GitHub Issue status updates (close completed, update labels)
+- [ ] JIRA ticket status updates (close completed, update status)
 
 ## Findings
 

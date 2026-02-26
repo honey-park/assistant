@@ -2,9 +2,9 @@
   "$schema": "../../protocol-schema.json",
   "name": "bugfix",
   "version": "1.1.0",
-  "description": "Lightweight protocol for minor bugfixes using GitHub Issues",
+  "description": "Lightweight protocol for minor bugfixes using JIRA tickets",
   "input": {
-    "type": "github-issue",
+    "type": "jira-ticket",
     "required": false,
     "default_for": ["--issue", "-i"]
   },

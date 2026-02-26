@@ -2,9 +2,9 @@
   "$schema": "../../protocol-schema.json",
   "name": "air",
   "version": "1.0.0",
-  "description": "AIR: Autonomous Implement & Review — lightweight protocol for small features from GitHub Issues",
+  "description": "AIR: Autonomous Implement & Review — lightweight protocol for small features from JIRA tickets",
   "input": {
-    "type": "github-issue",
+    "type": "jira-ticket",
     "required": false,
     "default_for": ["--issue", "-i"]
   },

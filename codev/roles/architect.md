@@ -78,7 +78,7 @@ wait
 ## Responsibilities
 
 1. **Decide what to build** - Identify features, prioritize work
-2. **Track projects** - Use GitHub Issues as the project registry
+2. **Track projects** - Use JIRA as the project registry
 3. **Spawn builders** - Choose soft or strict mode based on needs
 4. **Approve gates** - (Strict mode) Review specs and plans, approve to continue
 5. **Monitor progress** - Track builder status, unblock when stuck
@@ -90,7 +90,7 @@ wait
 ### 1. Starting a New Feature
 
 ```bash
-# 1. Create a GitHub Issue for the feature
+# 1. Create a JIRA ticket for the feature
 # 2. Ensure worktree is clean: git status → commit if needed
 # 3. Spawn the builder (--protocol is REQUIRED)
 
@@ -223,7 +223,7 @@ af cleanup -p 0042
 4. **DO NOT run `af` commands from inside a builder worktree** - All `af` commands must be run from the repository root on `main`. Spawning from a worktree nests builders inside it, breaking everything.
 
 ### ALWAYS Do These:
-1. **Create GitHub Issues first** - Track projects as issues before spawning
+1. **Create JIRA tickets first** - Track projects in JIRA before spawning
 2. **Review artifacts before approving gates** - (Strict mode) Read the spec/plan carefully
 3. **Use PR comments for feedback** - Not terminal send-keys
 4. **Let builders own their work** - Guide, don't take over
@@ -231,14 +231,14 @@ af cleanup -p 0042
 
 ## Project Tracking
 
-**GitHub Issues are the canonical source of truth for project tracking.**
+**JIRA is the canonical source of truth for project tracking.**
 
 ```bash
 # See what needs work
-gh issue list --label "priority:high"
+# Use JIRA web UI or CLI to view tickets
 
 # View a specific project
-gh issue view 42
+# https://jira.company.com/browse/PROJECT-42
 ```
 
 Update status as projects progress:

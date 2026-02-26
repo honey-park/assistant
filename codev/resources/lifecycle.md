@@ -100,7 +100,7 @@ Projects can also end up in terminal states if they won't be completed:
 
 ### Abandoned
 
-The project was canceled or rejected. It will not be implemented. Close the GitHub Issue with a comment explaining why.
+The project was canceled or rejected. It will not be implemented. Close the JIRA ticket with a comment explaining why.
 
 ### On-Hold
 
@@ -125,12 +125,12 @@ conceived → [HUMAN APPROVES] → specified → planned → implementing → im
 
 ## Managing Projects
 
-Project tracking uses **GitHub Issues**. To manage projects:
+Project tracking uses **JIRA**. To manage projects:
 
-- **Add a project:** Create a GitHub Issue describing what you want to build
-- **Update status:** Update issue labels and comments as work progresses
+- **Add a project:** Create a JIRA ticket describing what you want to build
+- **Update status:** Update ticket status and comments as work progresses
 - **Approve stages:** Review the spec/plan and tell the Architect to mark it approved
-- **View progress:** Check the Work tab in the dashboard or `gh issue list`
+- **View progress:** Check JIRA board or query for your project tickets
 
 ---
 

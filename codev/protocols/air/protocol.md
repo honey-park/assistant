@@ -14,7 +14,7 @@ AIR is a minimal protocol for implementing small features (< 300 LOC) where the 
 | Aspect | BUGFIX | AIR | ASPIR/SPIR |
 |--------|--------|-----|------------|
 | **Use case** | Bug fixes | Small features | New features |
-| **Input** | GitHub Issue | GitHub Issue | GitHub Issue → Spec |
+| **Input** | JIRA ticket | JIRA ticket | JIRA ticket → Spec |
 | **Phases** | Investigate → Fix → PR | Implement → PR | Specify → Plan → Implement → Review |
 | **Artifacts** | None | None | Spec, plan, review files |
 | **Review location** | PR body | PR body | `codev/reviews/` file |
