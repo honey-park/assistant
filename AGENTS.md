@@ -178,6 +178,56 @@ terminal-notifier -title "Claude" -subtitle "Task complete" -message "CPD-1234 i
 terminal-notifier -title "Claude" -subtitle "Task complete" -message "POC 'Redis vs Memcached' prototype ready. PR #45"
 ```
 
+## Development Best Practices
+
+### External Library Method Verification
+
+**CRITICAL: Always verify that methods from external libraries or dependencies exist before implementing code.**
+
+- **NO GUESSWORK**: Do not assume method names or signatures
+- **Verify first**: Use Grep or Read to find actual usage in the codebase
+- **Check documentation**: Read existing code that uses the same library
+- **Look for patterns**: Search for similar API calls in the project
+
+**Example workflow when using an external library:**
+1. Search the codebase for existing usage: `grep -r "ClassName\." src/`
+2. Read files that use the library to see actual method calls
+3. Verify the method exists before implementing
+4. If uncertain, read the library's source code or documentation
+
+This prevents build errors from calling non-existent methods (e.g., calling `tokenDto.getToken()` when the actual method is `tokenDto.getAccessToken()`).
+
+### Repository-Specific Best Practices
+
+**Maintain AGENTS.md files in external repositories:**
+
+When working on external codebases (social-reach-svc, rise-ui, etc.), keep their `AGENTS.md` files updated with lessons learned and best practices. This creates a knowledge base for future work.
+
+**Key repositories with AGENTS.md:**
+- `/Users/honeypark/Projects/social-reach-svc/AGENTS.md` - social-reach-svc patterns and gotchas
+- `/Users/honeypark/Projects/rise-ui/AGENTS.md` - Rise UI patterns (if exists)
+
+**When to update external AGENTS.md:**
+- Discover new architectural patterns
+- Learn important gotchas or anti-patterns
+- Find critical DRY/KISS principles
+- Identify common mistakes to avoid
+- Document useful workflows or debugging tips
+
+**Example - social-reach-svc DRY/KISS principles:**
+After learning that social-reach-svc requires reusing network-specific utilities (InstagramNativeUtil, FacebookUtil, etc.) rather than writing direct API calls, this was documented in the repo's AGENTS.md with:
+- Examples of BAD vs GOOD patterns
+- ProfileRepository usage patterns
+- NetworkProfileContext building
+- Anti-patterns to avoid
+- Pre-implementation checklist
+
+**Process:**
+1. Learn something important while working on a repo
+2. Update that repo's AGENTS.md with the knowledge
+3. Commit the documentation update with the feature work
+4. Future work benefits from documented patterns
+
 ## Working Style
 
 1. **Proactive**: Anticipate needs and ask clarifying questions

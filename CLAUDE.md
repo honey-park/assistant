@@ -3,6 +3,7 @@
 > **Note**: For personal assistant instructions and general context, see `AGENTS.md`. This file focuses on development-specific instructions.
 
 ## ⚠️ CRITICAL RULES - READ FIRST
+** Always read both Claude.md and AGENTS.md files at start up and when executing tasks.**
 
 **STOP AFTER PUSHING. NEVER CREATE PRS WITHOUT EXPLICIT PERMISSION.**
 
@@ -76,6 +77,25 @@ For complete reference, see `codev/resources/commands/`:
 - `codev/resources/commands/codev.md` - Project commands
 - `codev/resources/commands/agent-farm.md` - Agent Farm commands
 - `codev/resources/commands/consult.md` - Consultation commands
+
+## Development Best Practices
+
+### External Library Method Verification
+
+**CRITICAL: Always verify that methods from external libraries or dependencies exist before implementing code.**
+
+- **NO GUESSWORK**: Do not assume method names or signatures
+- **Verify first**: Use Grep or Read to find actual usage in the codebase
+- **Check documentation**: Read existing code that uses the same library
+- **Look for patterns**: Search for similar API calls in the project
+
+**Example workflow when using an external library:**
+1. Search the codebase for existing usage: `grep -r "ClassName\." src/`
+2. Read files that use the library to see actual method calls
+3. Verify the method exists before implementing
+4. If uncertain, read the library's source code or documentation
+
+This prevents build errors from calling non-existent methods (e.g., calling `tokenDto.getToken()` when the actual method is `tokenDto.getAccessToken()`).
 
 ## Configuration
 
